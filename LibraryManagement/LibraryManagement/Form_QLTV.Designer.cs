@@ -32,11 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuQuanLy = new System.Windows.Forms.MenuStrip();
             this.menuDanhMuc = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuQLSach = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuQLDG = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMuon_Tra = new System.Windows.Forms.ToolStripMenuItem();
             this.menuReport_Stat = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuQLSach = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuQLDG = new System.Windows.Forms.ToolStripMenuItem();
             this.menuQuanLy.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +81,19 @@
             this.menuDanhMuc.Size = new System.Drawing.Size(268, 54);
             this.menuDanhMuc.Text = "Quản Lý Danh Mục";
             // 
+            // menuQLSach
+            // 
+            this.menuQLSach.Name = "menuQLSach";
+            this.menuQLSach.Size = new System.Drawing.Size(314, 42);
+            this.menuQLSach.Text = "Quản Lý Sách";
+            // 
+            // menuQLDG
+            // 
+            this.menuQLDG.Name = "menuQLDG";
+            this.menuQLDG.Size = new System.Drawing.Size(314, 42);
+            this.menuQLDG.Text = "Quản Lý Độc Giả";
+            this.menuQLDG.Click += new System.EventHandler(this.menuQLDG_Click);
+            // 
             // menuMuon_Tra
             // 
             this.menuMuon_Tra.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -103,19 +116,6 @@
             this.menuExit.Text = "Thoát";
             this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
             // 
-            // menuQLSach
-            // 
-            this.menuQLSach.Name = "menuQLSach";
-            this.menuQLSach.Size = new System.Drawing.Size(314, 42);
-            this.menuQLSach.Text = "Quản Lý Sách";
-            // 
-            // menuQLDG
-            // 
-            this.menuQLDG.Name = "menuQLDG";
-            this.menuQLDG.Size = new System.Drawing.Size(314, 42);
-            this.menuQLDG.Text = "Quản Lý Độc Giả";
-            this.menuQLDG.Click += new System.EventHandler(this.menuQLDG_Click);
-            // 
             // Form_QLSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -127,7 +127,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuQuanLy);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

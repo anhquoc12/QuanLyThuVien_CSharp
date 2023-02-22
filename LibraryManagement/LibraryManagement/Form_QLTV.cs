@@ -25,7 +25,6 @@ namespace LibraryManagement
         private void menuQLDG_Click(object sender, EventArgs e)
         {
             Form_DocGia f = new Form_DocGia();
-            f.MdiParent = this;
             f.Show();
         }
 
