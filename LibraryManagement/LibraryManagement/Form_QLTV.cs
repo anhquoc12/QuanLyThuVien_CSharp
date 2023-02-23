@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibraryManagement
 {
-    public partial class Form_QLSV : Form
+    public partial class Form_QLTV : Form
     {
-        public Form_QLSV()
+        public Form_QLTV()
         {
             InitializeComponent();
         }
@@ -25,6 +25,12 @@ namespace LibraryManagement
         private void menuQLDG_Click(object sender, EventArgs e)
         {
             Form_DocGia f = new Form_DocGia();
+            f.Show();
+        }
+
+        private void menuMuon_Tra_Click(object sender, EventArgs e)
+        {
+            form_QLMuonTra f = new form_QLMuonTra();
             f.Show();
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace LibraryManagement
 {
-    partial class Form_QLSV
+    partial class Form_QLTV
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_QLSV));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_QLTV));
             this.label1 = new System.Windows.Forms.Label();
             this.menuQuanLy = new System.Windows.Forms.MenuStrip();
             this.menuDanhMuc = new System.Windows.Forms.ToolStripMenuItem();
@@ -100,6 +100,7 @@
             this.menuMuon_Tra.Name = "menuMuon_Tra";
             this.menuMuon_Tra.Size = new System.Drawing.Size(259, 54);
             this.menuMuon_Tra.Text = "Quản Lý Mượn Trả";
+            this.menuMuon_Tra.Click += new System.EventHandler(this.menuMuon_Tra_Click);
             // 
             // menuReport_Stat
             // 
@@ -116,7 +117,7 @@
             this.menuExit.Text = "Thoát";
             this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
             // 
-            // Form_QLSV
+            // Form_QLTV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,7 +131,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form_QLSV";
+            this.Name = "Form_QLTV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần Mềm Quản Lý Thư Viện";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ColumnHeader col1;
             this.gbSearch = new System.Windows.Forms.GroupBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,22 +54,25 @@
             this.txtKhoa = new System.Windows.Forms.TextBox();
             this.txtDate = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.selGT = new System.Windows.Forms.ComboBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.selGT = new System.Windows.Forms.ComboBox();
-            col1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colMaDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Khoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbSearch.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // col1
-            // 
-            col1.Text = "col1";
             // 
             // gbSearch
             // 
@@ -367,34 +369,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin độc giả";
             // 
-            // groupBox3
+            // selGT
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.listView1);
-            this.groupBox3.Location = new System.Drawing.Point(34, 657);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1235, 329);
-            this.groupBox3.TabIndex = 10;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Danh Sách Độc Giả";
-            // 
-            // listView1
-            // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            col1,
-            this.columnHeader1});
-            this.listView1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.listView1.HideSelection = false;
-            this.listView1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.listView1.Location = new System.Drawing.Point(16, 49);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1209, 261);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.selGT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.selGT.Enabled = false;
+            this.selGT.FormattingEnabled = true;
+            this.selGT.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.selGT.Location = new System.Drawing.Point(165, 215);
+            this.selGT.Name = "selGT";
+            this.selGT.Size = new System.Drawing.Size(129, 37);
+            this.selGT.TabIndex = 17;
             // 
             // txtEmail
             // 
@@ -416,18 +402,92 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Email";
             // 
-            // selGT
+            // groupBox3
             // 
-            this.selGT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.selGT.Enabled = false;
-            this.selGT.FormattingEnabled = true;
-            this.selGT.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.selGT.Location = new System.Drawing.Point(165, 215);
-            this.selGT.Name = "selGT";
-            this.selGT.Size = new System.Drawing.Size(129, 37);
-            this.selGT.TabIndex = 17;
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(34, 657);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1235, 329);
+            this.groupBox3.TabIndex = 10;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Danh Sách Độc Giả";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.dataGridView1.ColumnHeadersHeight = 29;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colMaDocGia,
+            this.col_Name,
+            this.col_Date,
+            this.col_Gender,
+            this.col_Address,
+            this.col_Phone,
+            this.col_Khoa,
+            this.col_Email});
+            this.dataGridView1.Location = new System.Drawing.Point(13, 25);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1209, 278);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // colMaDocGia
+            // 
+            this.colMaDocGia.HeaderText = "Mã Độc Giả";
+            this.colMaDocGia.MinimumWidth = 6;
+            this.colMaDocGia.Name = "colMaDocGia";
+            // 
+            // col_Name
+            // 
+            this.col_Name.HeaderText = "Tên Độc Giả";
+            this.col_Name.MinimumWidth = 6;
+            this.col_Name.Name = "col_Name";
+            // 
+            // col_Date
+            // 
+            this.col_Date.HeaderText = "Ngày Sinh";
+            this.col_Date.MinimumWidth = 6;
+            this.col_Date.Name = "col_Date";
+            this.col_Date.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // col_Gender
+            // 
+            this.col_Gender.HeaderText = "Giới Tính";
+            this.col_Gender.MinimumWidth = 6;
+            this.col_Gender.Name = "col_Gender";
+            this.col_Gender.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // col_Address
+            // 
+            this.col_Address.HeaderText = "Địa Chỉ";
+            this.col_Address.MinimumWidth = 6;
+            this.col_Address.Name = "col_Address";
+            // 
+            // col_Phone
+            // 
+            this.col_Phone.HeaderText = "Số Điện Thoại";
+            this.col_Phone.MinimumWidth = 6;
+            this.col_Phone.Name = "col_Phone";
+            // 
+            // col_Khoa
+            // 
+            this.col_Khoa.HeaderText = "Khoa";
+            this.col_Khoa.MinimumWidth = 6;
+            this.col_Khoa.Name = "col_Khoa";
+            // 
+            // col_Email
+            // 
+            this.col_Email.HeaderText = "Email";
+            this.col_Email.MinimumWidth = 6;
+            this.col_Email.Name = "col_Email";
             // 
             // Form_DocGia
             // 
@@ -455,6 +515,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form_DocGia_Load);
             this.gbSearch.ResumeLayout(false);
             this.gbSearch.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -462,6 +523,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -495,10 +557,17 @@
         private System.Windows.Forms.DateTimePicker txtDate;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox selGT;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMaDocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Address;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Khoa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_Email;
     }
 }

@@ -19,21 +19,30 @@ namespace LibraryManagement
         private void init()
         {
             txtId.Text = "";
-            //txtId.Enabled = false;
             txtName.Text = "";
-            //txtName.Enabled = false;
             txtDate.Text = DateTime.Now.ToString();
-            //txtDate.Enabled = false;
             selGT.Text = "";
-            //selGT.Enabled = false;
             txtAddress.Text = "";
-            //txtAddress.Enabled = false;
             txtSDT.Text = "";
-            //txtSDT.Enabled = false;
             txtKhoa.Text = "";
-            //txtKhoa.Enabled = false;
             txtEmail.Text = "";
-            //txtEmail.Enabled = false;
+        }
+        
+        private void reset()
+        {
+            btnCancle.Enabled = false;
+            btnSave.Enabled = true;
+            btnAdd.Enabled = true;
+            btnEdit.Enabled = false;
+            btnDelete.Enabled = false;
+            txtId.Enabled = false;
+            txtName.Enabled = false;
+            txtDate.Enabled = false;
+            selGT.Enabled = false;
+            txtAddress.Enabled = false;
+            txtSDT.Enabled = false;
+            txtKhoa.Enabled = false;
+            txtEmail.Enabled = false;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -47,27 +56,14 @@ namespace LibraryManagement
             txtKhoa.Enabled = true;
             txtEmail.Enabled = true;
             btnCancle.Enabled = true;
-             btnSave.Enabled = true;
+            btnSave.Enabled = true;
+            btnAdd.Enabled = false;
         }
 
         private void btnCancle_Click(object sender, EventArgs e)
         {
-            txtId.Text = "";
-            //txtId.Enabled = false;
-            txtName.Text = "";
-            //txtName.Enabled = false;
-            txtDate.Text = DateTime.Now.ToString();
-            //txtDate.Enabled = false;
-            selGT.Text = "";
-            //selGT.Enabled = false;
-            txtAddress.Text = "";
-            //txtAddress.Enabled = false;
-            txtSDT.Text = "";
-            //txtSDT.Enabled = false;
-            txtKhoa.Text = "";
-            //txtKhoa.Enabled = false;
-            txtEmail.Text = "";
-            //txtEmail.Enabled = false;
+            init();
+            reset();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -85,6 +81,12 @@ namespace LibraryManagement
                     MessageBoxIcon.Information);
 
             }
+            init();
+        }
+
+        private void Form_DocGia_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

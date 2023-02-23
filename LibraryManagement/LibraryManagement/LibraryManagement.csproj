@@ -52,6 +52,12 @@
     <Compile Include="Form_DocGia.Designer.cs">
       <DependentUpon>Form_DocGia.cs</DependentUpon>
     </Compile>
+    <Compile Include="form_QLMuonTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_QLMuonTra.Designer.cs">
+      <DependentUpon>form_QLMuonTra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_QLTV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form_DocGia.resx">
       <DependentUpon>Form_DocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_QLMuonTra.resx">
+      <DependentUpon>form_QLMuonTra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_QLTV.resx">
       <DependentUpon>Form_QLTV.cs</DependentUpon>

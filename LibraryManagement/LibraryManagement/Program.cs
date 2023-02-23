@@ -16,7 +16,7 @@ namespace LibraryManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_QLSV());
+            Application.Run(new Form_QLTV());
             //Application.Run(new Form_DocGia());
         }
     }
