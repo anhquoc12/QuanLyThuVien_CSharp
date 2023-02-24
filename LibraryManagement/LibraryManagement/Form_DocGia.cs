@@ -31,7 +31,7 @@ namespace LibraryManagement
         private void reset()
         {
             btnCancle.Enabled = false;
-            btnSave.Enabled = true;
+            btnSave.Enabled = false;
             btnAdd.Enabled = true;
             btnEdit.Enabled = false;
             btnDelete.Enabled = false;
