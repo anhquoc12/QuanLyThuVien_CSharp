@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,28 +59,29 @@
     <Compile Include="form_QLMuonTra.Designer.cs">
       <DependentUpon>form_QLMuonTra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_QLTV.cs">
+    <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_QLTV.Designer.cs">
-      <DependentUpon>Form_QLTV.cs</DependentUpon>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stat.cs">
+    <Compile Include="Form_Stat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Stat.Designer.cs">
-      <DependentUpon>Stat.cs</DependentUpon>
+    <Compile Include="Form_Stat.Designer.cs">
+      <DependentUpon>Form_Stat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils.cs" />
     <EmbeddedResource Include="Form_DocGia.resx">
       <DependentUpon>Form_DocGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form_QLMuonTra.resx">
       <DependentUpon>form_QLMuonTra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_QLTV.resx">
-      <DependentUpon>Form_QLTV.cs</DependentUpon>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,6 +92,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form_Stat.resx">
+      <DependentUpon>Form_Stat.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

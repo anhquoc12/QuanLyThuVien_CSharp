@@ -1,6 +1,6 @@
 ﻿namespace LibraryManagement
 {
-    partial class Form_QLTV
+    partial class Home
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_QLTV));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.label1 = new System.Windows.Forms.Label();
             this.menuQuanLy = new System.Windows.Forms.MenuStrip();
             this.menuDanhMuc = new System.Windows.Forms.ToolStripMenuItem();
             this.menuQLSach = new System.Windows.Forms.ToolStripMenuItem();
             this.menuQLDG = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMuon_Tra = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuReport_Stat = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStat = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.menuQuanLy.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +63,7 @@
             this.menuQuanLy.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuDanhMuc,
             this.menuMuon_Tra,
-            this.menuReport_Stat,
+            this.menuStat,
             this.menuExit});
             this.menuQuanLy.Location = new System.Drawing.Point(-2, 92);
             this.menuQuanLy.Name = "menuQuanLy";
@@ -102,12 +102,13 @@
             this.menuMuon_Tra.Text = "Quản Lý Mượn Trả";
             this.menuMuon_Tra.Click += new System.EventHandler(this.menuMuon_Tra_Click);
             // 
-            // menuReport_Stat
+            // menuStat
             // 
-            this.menuReport_Stat.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuReport_Stat.Name = "menuReport_Stat";
-            this.menuReport_Stat.Size = new System.Drawing.Size(277, 54);
-            this.menuReport_Stat.Text = "Báo Cáo - Thống Kê";
+            this.menuStat.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStat.Name = "menuStat";
+            this.menuStat.Size = new System.Drawing.Size(277, 54);
+            this.menuStat.Text = "Báo Cáo - Thống Kê";
+            this.menuStat.Click += new System.EventHandler(this.menuStat_Click);
             // 
             // menuExit
             // 
@@ -117,7 +118,7 @@
             this.menuExit.Text = "Thoát";
             this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
             // 
-            // Form_QLTV
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,7 +132,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form_QLTV";
+            this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần Mềm Quản Lý Thư Viện";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -147,7 +148,7 @@
         private System.Windows.Forms.MenuStrip menuQuanLy;
         private System.Windows.Forms.ToolStripMenuItem menuDanhMuc;
         private System.Windows.Forms.ToolStripMenuItem menuMuon_Tra;
-        private System.Windows.Forms.ToolStripMenuItem menuReport_Stat;
+        private System.Windows.Forms.ToolStripMenuItem menuStat;
         private System.Windows.Forms.ToolStripMenuItem menuExit;
         private System.Windows.Forms.ToolStripMenuItem menuQLSach;
         private System.Windows.Forms.ToolStripMenuItem menuQLDG;
