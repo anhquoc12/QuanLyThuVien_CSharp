@@ -534,12 +534,12 @@
             // 
             // Form_DocGia
             // 
-            this.AccessibleRole = System.Windows.Forms.AccessibleRole.ToolBar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(1467, 1055);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.groupBox3);
@@ -550,6 +550,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.Name = "Form_DocGia";
             this.RightToLeftLayout = true;
+            this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

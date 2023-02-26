@@ -30,6 +30,17 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colMaPhieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMaDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNgayTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTienDatCoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPhiQuaHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNote = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -45,6 +56,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -59,47 +71,17 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -111,19 +93,39 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.colMaPhieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMaDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNgayTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTienDatCoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPhiQuaHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNote = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button6 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -132,15 +134,13 @@
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -170,6 +170,105 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quản Lý Mượn Sách";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox6.Controls.Add(this.dataGridView1);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(4, 507);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(1221, 405);
+            this.groupBox6.TabIndex = 5;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Danh Sách Mượn";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colMaPhieu,
+            this.colMaDocGia,
+            this.colMaSach,
+            this.colSoLuong,
+            this.colNgayMuon,
+            this.colNgayTra,
+            this.colTienDatCoc,
+            this.colPhiQuaHan,
+            this.colNote});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 29);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1195, 370);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // colMaPhieu
+            // 
+            this.colMaPhieu.HeaderText = "Mã Phiếu";
+            this.colMaPhieu.MinimumWidth = 6;
+            this.colMaPhieu.Name = "colMaPhieu";
+            this.colMaPhieu.ReadOnly = true;
+            // 
+            // colMaDocGia
+            // 
+            this.colMaDocGia.HeaderText = "Mã Độc Giả";
+            this.colMaDocGia.MinimumWidth = 6;
+            this.colMaDocGia.Name = "colMaDocGia";
+            this.colMaDocGia.ReadOnly = true;
+            // 
+            // colMaSach
+            // 
+            this.colMaSach.HeaderText = "Mã Sách";
+            this.colMaSach.MinimumWidth = 6;
+            this.colMaSach.Name = "colMaSach";
+            this.colMaSach.ReadOnly = true;
+            // 
+            // colSoLuong
+            // 
+            this.colSoLuong.HeaderText = "Số Lượng";
+            this.colSoLuong.MinimumWidth = 6;
+            this.colSoLuong.Name = "colSoLuong";
+            this.colSoLuong.ReadOnly = true;
+            // 
+            // colNgayMuon
+            // 
+            this.colNgayMuon.HeaderText = "Ngày Mượn";
+            this.colNgayMuon.MinimumWidth = 6;
+            this.colNgayMuon.Name = "colNgayMuon";
+            this.colNgayMuon.ReadOnly = true;
+            // 
+            // colNgayTra
+            // 
+            this.colNgayTra.HeaderText = "Ngày Trả";
+            this.colNgayTra.MinimumWidth = 6;
+            this.colNgayTra.Name = "colNgayTra";
+            this.colNgayTra.ReadOnly = true;
+            // 
+            // colTienDatCoc
+            // 
+            this.colTienDatCoc.HeaderText = "Tiền Đặt Cọc";
+            this.colTienDatCoc.MinimumWidth = 6;
+            this.colTienDatCoc.Name = "colTienDatCoc";
+            this.colTienDatCoc.ReadOnly = true;
+            // 
+            // colPhiQuaHan
+            // 
+            this.colPhiQuaHan.HeaderText = "Phí Quá Hạn";
+            this.colPhiQuaHan.MinimumWidth = 6;
+            this.colPhiQuaHan.Name = "colPhiQuaHan";
+            this.colPhiQuaHan.ReadOnly = true;
+            // 
+            // colNote
+            // 
+            this.colNote.HeaderText = "Ghi Chú";
+            this.colNote.MinimumWidth = 6;
+            this.colNote.Name = "colNote";
+            this.colNote.ReadOnly = true;
             // 
             // tableLayoutPanel3
             // 
@@ -360,6 +459,13 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(795, 201);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(201, 153);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(192, 30);
+            this.textBox5.TabIndex = 30;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -482,6 +588,15 @@
             this.textBox3.Size = new System.Drawing.Size(195, 30);
             this.textBox3.TabIndex = 28;
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(3, 150);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(186, 25);
+            this.label19.TabIndex = 29;
+            this.label19.Text = "Phí Quá hạn (Ngày)";
+            // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
@@ -503,16 +618,6 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Mã Độc Giả";
             this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(1048, 101);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 39);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Tìm Kiếm";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -555,15 +660,6 @@
             this.radioButton6.Text = "Mã Sách";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(520, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 25);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Nhập thông tin tìm kiếm";
-            // 
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
@@ -584,6 +680,25 @@
             this.textBox1.Size = new System.Drawing.Size(512, 30);
             this.textBox1.TabIndex = 5;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(520, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(214, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Nhập thông tin tìm kiếm";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(1048, 101);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(139, 39);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Tìm Kiếm";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // tabPage2
             // 
             this.tabPage2.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
@@ -598,324 +713,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quản Lý Trả Sách";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label22);
-            this.groupBox4.Controls.Add(this.label21);
-            this.groupBox4.Controls.Add(this.tableLayoutPanel9);
-            this.groupBox4.Controls.Add(this.tableLayoutPanel7);
-            this.groupBox4.Location = new System.Drawing.Point(15, 209);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(951, 329);
-            this.groupBox4.TabIndex = 2;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Phiếu Trả Sách";
-            // 
-            // button5
-            // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Location = new System.Drawing.Point(1097, 95);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 35);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Tìm kiếm";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.tableLayoutPanel4);
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Location = new System.Drawing.Point(8, 24);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1217, 161);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Tìm Kiếm";
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.radioButton2, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.radioButton1, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.textBox4, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label18, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(7, 47);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1053, 90);
-            this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(3, 48);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(112, 29);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Mã Sách";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(136, 29);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Mã Độc Giả";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(529, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(214, 25);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "Nhập thông tin tìm kiếm";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(529, 48);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(521, 30);
-            this.textBox4.TabIndex = 3;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(3, 150);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(186, 25);
-            this.label19.TabIndex = 29;
-            this.label19.Text = "Phí Quá hạn (Ngày)";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(201, 153);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(192, 30);
-            this.textBox5.TabIndex = 30;
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.textBox10, 1, 2);
-            this.tableLayoutPanel7.Controls.Add(this.label29, 0, 2);
-            this.tableLayoutPanel7.Controls.Add(this.textBox9, 1, 1);
-            this.tableLayoutPanel7.Controls.Add(this.label28, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.label20, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.textBox7, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.label25, 0, 3);
-            this.tableLayoutPanel7.Controls.Add(this.textBox6, 1, 3);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(6, 29);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 4;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(451, 199);
-            this.tableLayoutPanel7.TabIndex = 0;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(228, 150);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(220, 30);
-            this.textBox6.TabIndex = 30;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(3, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(95, 25);
-            this.label20.TabIndex = 15;
-            this.label20.Text = "Mã Phiếu";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(3, 147);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(90, 25);
-            this.label25.TabIndex = 19;
-            this.label25.Text = "Số lượng";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(228, 3);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(220, 30);
-            this.textBox7.TabIndex = 26;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(3, 49);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(115, 25);
-            this.label28.TabIndex = 27;
-            this.label28.Text = "Mã Độc Giả";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(228, 52);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(220, 30);
-            this.textBox9.TabIndex = 28;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(3, 98);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(91, 25);
-            this.label29.TabIndex = 29;
-            this.label29.Text = "Mã Sách";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(228, 101);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(220, 30);
-            this.textBox10.TabIndex = 30;
-            // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.ColumnCount = 2;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Controls.Add(this.comboBox5, 1, 2);
-            this.tableLayoutPanel9.Controls.Add(this.label30, 0, 2);
-            this.tableLayoutPanel9.Controls.Add(this.textBox12, 1, 1);
-            this.tableLayoutPanel9.Controls.Add(this.label31, 0, 1);
-            this.tableLayoutPanel9.Controls.Add(this.label32, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.textBox13, 1, 0);
-            this.tableLayoutPanel9.Controls.Add(this.label33, 0, 3);
-            this.tableLayoutPanel9.Controls.Add(this.textBox14, 1, 3);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(484, 29);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 4;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(439, 199);
-            this.tableLayoutPanel9.TabIndex = 31;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(3, 98);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(108, 25);
-            this.label30.TabIndex = 29;
-            this.label30.Text = "Tình Trạng";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(222, 52);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(214, 30);
-            this.textBox12.TabIndex = 28;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(3, 49);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(93, 25);
-            this.label31.TabIndex = 27;
-            this.label31.Text = "Ngày Trả";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(3, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(113, 25);
-            this.label32.TabIndex = 15;
-            this.label32.Text = "Ngày Mượn";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(222, 3);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(214, 30);
-            this.textBox13.TabIndex = 26;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(3, 147);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(142, 25);
-            this.label33.TabIndex = 19;
-            this.label33.Text = "Ngày Quá Hạn";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Trả Sách",
-            "Không Thể Trả Sách"});
-            this.comboBox5.Location = new System.Drawing.Point(222, 101);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(214, 33);
-            this.comboBox5.TabIndex = 4;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(222, 150);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(214, 30);
-            this.textBox14.TabIndex = 30;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(9, 267);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(119, 25);
-            this.label21.TabIndex = 32;
-            this.label21.Text = "Phí Phải Trả";
-            // 
-            // label22
-            // 
-            this.label22.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Tomato;
-            this.label22.Location = new System.Drawing.Point(234, 267);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(689, 25);
-            this.label22.TabIndex = 33;
-            this.label22.Text = "0 VNĐ";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(1007, 501);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(114, 37);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Trả Sách";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -1017,104 +814,307 @@
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
             // 
-            // groupBox6
+            // button6
             // 
-            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.button6.Location = new System.Drawing.Point(1007, 501);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(114, 37);
+            this.button6.TabIndex = 3;
+            this.button6.Text = "Trả Sách";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Controls.Add(this.tableLayoutPanel9);
+            this.groupBox4.Controls.Add(this.tableLayoutPanel7);
+            this.groupBox4.Location = new System.Drawing.Point(15, 209);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(951, 329);
+            this.groupBox4.TabIndex = 2;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Phiếu Trả Sách";
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Tomato;
+            this.label22.Location = new System.Drawing.Point(234, 267);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(689, 25);
+            this.label22.TabIndex = 33;
+            this.label22.Text = "0 VNĐ";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(9, 267);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(119, 25);
+            this.label21.TabIndex = 32;
+            this.label21.Text = "Phí Phải Trả";
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 2;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.Controls.Add(this.comboBox5, 1, 2);
+            this.tableLayoutPanel9.Controls.Add(this.label30, 0, 2);
+            this.tableLayoutPanel9.Controls.Add(this.textBox12, 1, 1);
+            this.tableLayoutPanel9.Controls.Add(this.label31, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.label32, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.textBox13, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label33, 0, 3);
+            this.tableLayoutPanel9.Controls.Add(this.textBox14, 1, 3);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(484, 29);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 4;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(439, 199);
+            this.tableLayoutPanel9.TabIndex = 31;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "Trả Sách",
+            "Không Thể Trả Sách"});
+            this.comboBox5.Location = new System.Drawing.Point(222, 101);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(214, 33);
+            this.comboBox5.TabIndex = 4;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(3, 98);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(108, 25);
+            this.label30.TabIndex = 29;
+            this.label30.Text = "Tình Trạng";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(222, 52);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(214, 30);
+            this.textBox12.TabIndex = 28;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(3, 49);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(93, 25);
+            this.label31.TabIndex = 27;
+            this.label31.Text = "Ngày Trả";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(3, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(113, 25);
+            this.label32.TabIndex = 15;
+            this.label32.Text = "Ngày Mượn";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(222, 3);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(214, 30);
+            this.textBox13.TabIndex = 26;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(3, 147);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(142, 25);
+            this.label33.TabIndex = 19;
+            this.label33.Text = "Ngày Quá Hạn";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(222, 150);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(214, 30);
+            this.textBox14.TabIndex = 30;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.textBox10, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.label29, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.textBox9, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.label28, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.label20, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.textBox7, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label25, 0, 3);
+            this.tableLayoutPanel7.Controls.Add(this.textBox6, 1, 3);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(6, 29);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 4;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(451, 199);
+            this.tableLayoutPanel7.TabIndex = 0;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(228, 101);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(220, 30);
+            this.textBox10.TabIndex = 30;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(3, 98);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(91, 25);
+            this.label29.TabIndex = 29;
+            this.label29.Text = "Mã Sách";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(228, 52);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(220, 30);
+            this.textBox9.TabIndex = 28;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(3, 49);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(115, 25);
+            this.label28.TabIndex = 27;
+            this.label28.Text = "Mã Độc Giả";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(3, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(95, 25);
+            this.label20.TabIndex = 15;
+            this.label20.Text = "Mã Phiếu";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(228, 3);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(220, 30);
+            this.textBox7.TabIndex = 26;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(3, 147);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(90, 25);
+            this.label25.TabIndex = 19;
+            this.label25.Text = "Số lượng";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(228, 150);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(220, 30);
+            this.textBox6.TabIndex = 30;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox6.Controls.Add(this.dataGridView1);
-            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(4, 507);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1221, 405);
-            this.groupBox6.TabIndex = 5;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Danh Sách Mượn";
+            this.groupBox3.Controls.Add(this.tableLayoutPanel4);
+            this.groupBox3.Controls.Add(this.button5);
+            this.groupBox3.Location = new System.Drawing.Point(8, 24);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1217, 161);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tìm Kiếm";
             // 
-            // dataGridView1
+            // tableLayoutPanel4
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colMaPhieu,
-            this.colMaDocGia,
-            this.colMaSach,
-            this.colSoLuong,
-            this.colNgayMuon,
-            this.colNgayTra,
-            this.colTienDatCoc,
-            this.colPhiQuaHan,
-            this.colNote});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 29);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1195, 370);
-            this.dataGridView1.TabIndex = 6;
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.radioButton2, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.radioButton1, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.textBox4, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label18, 1, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(7, 47);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1053, 90);
+            this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // colMaPhieu
+            // radioButton2
             // 
-            this.colMaPhieu.HeaderText = "Mã Phiếu";
-            this.colMaPhieu.MinimumWidth = 6;
-            this.colMaPhieu.Name = "colMaPhieu";
-            this.colMaPhieu.ReadOnly = true;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(3, 48);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(112, 29);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Mã Sách";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // colMaDocGia
+            // radioButton1
             // 
-            this.colMaDocGia.HeaderText = "Mã Độc Giả";
-            this.colMaDocGia.MinimumWidth = 6;
-            this.colMaDocGia.Name = "colMaDocGia";
-            this.colMaDocGia.ReadOnly = true;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(3, 3);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(136, 29);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Mã Độc Giả";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // colMaSach
+            // textBox4
             // 
-            this.colMaSach.HeaderText = "Mã Sách";
-            this.colMaSach.MinimumWidth = 6;
-            this.colMaSach.Name = "colMaSach";
-            this.colMaSach.ReadOnly = true;
+            this.textBox4.Location = new System.Drawing.Point(529, 48);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(521, 30);
+            this.textBox4.TabIndex = 3;
             // 
-            // colSoLuong
+            // label18
             // 
-            this.colSoLuong.HeaderText = "Số Lượng";
-            this.colSoLuong.MinimumWidth = 6;
-            this.colSoLuong.Name = "colSoLuong";
-            this.colSoLuong.ReadOnly = true;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(529, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(214, 25);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Nhập thông tin tìm kiếm";
             // 
-            // colNgayMuon
+            // button5
             // 
-            this.colNgayMuon.HeaderText = "Ngày Mượn";
-            this.colNgayMuon.MinimumWidth = 6;
-            this.colNgayMuon.Name = "colNgayMuon";
-            this.colNgayMuon.ReadOnly = true;
-            // 
-            // colNgayTra
-            // 
-            this.colNgayTra.HeaderText = "Ngày Trả";
-            this.colNgayTra.MinimumWidth = 6;
-            this.colNgayTra.Name = "colNgayTra";
-            this.colNgayTra.ReadOnly = true;
-            // 
-            // colTienDatCoc
-            // 
-            this.colTienDatCoc.HeaderText = "Tiền Đặt Cọc";
-            this.colTienDatCoc.MinimumWidth = 6;
-            this.colTienDatCoc.Name = "colTienDatCoc";
-            this.colTienDatCoc.ReadOnly = true;
-            // 
-            // colPhiQuaHan
-            // 
-            this.colPhiQuaHan.HeaderText = "Phí Quá Hạn";
-            this.colPhiQuaHan.MinimumWidth = 6;
-            this.colPhiQuaHan.Name = "colPhiQuaHan";
-            this.colPhiQuaHan.ReadOnly = true;
-            // 
-            // colNote
-            // 
-            this.colNote.HeaderText = "Ghi Chú";
-            this.colNote.MinimumWidth = 6;
-            this.colNote.Name = "colNote";
-            this.colNote.ReadOnly = true;
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.Location = new System.Drawing.Point(1097, 95);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(114, 35);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Tìm kiếm";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // form_QLMuonTra
             // 
@@ -1125,9 +1125,12 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "form_QLMuonTra";
+            this.ShowIcon = false;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -1140,19 +1143,17 @@
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel9.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

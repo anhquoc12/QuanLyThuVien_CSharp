@@ -19,7 +19,9 @@ namespace LibraryManagement
 
         private void menuExit_Click(object sender, EventArgs e)
         {
-            Close();
+            DialogResult exit = MessageBox.Show("Bạn Muốn Thoát", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (exit == DialogResult.OK)
+                Close();
         }
 
         private void menuQLDG_Click(object sender, EventArgs e)
@@ -39,10 +41,5 @@ namespace LibraryManagement
             Form_Stat f = new Form_Stat();
             f.Show();
         }
-
-        //    private void menuDanhMuc_Click(object sender, EventArgs e)
-        //    {
-
-        //    }
     }
 }
