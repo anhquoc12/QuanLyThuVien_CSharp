@@ -1,8 +1,11 @@
-﻿using System;
+﻿using BTL_LTCSDL_QLThưViện;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+
 
 namespace LibraryManagement
 {
@@ -17,6 +20,7 @@ namespace LibraryManagement
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Home());
+            
         }
     }
 }

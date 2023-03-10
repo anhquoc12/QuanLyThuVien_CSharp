@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="QLTV.DAO">
+      <HintPath>..\Library.DAO\bin\Debug\net6.0\QLTV.DAO.dll</HintPath>
+    </Reference>
+    <Reference Include="QLTV.DTO">
+      <HintPath>..\Library.DTO\bin\Debug\net6.0\QLTV.DTO.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

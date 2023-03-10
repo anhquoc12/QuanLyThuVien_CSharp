@@ -18,14 +18,10 @@ namespace LibraryManagement
         }
         private void init()
         {
-            txtId.Text = "";
-            txtName.Text = "";
-            txtDate.Text = DateTime.Now.ToString();
-            selGT.Text = "";
-            txtAddress.Text = "";
+            txtMaDocGia.Text = "";
+            txtTenDocGia.Text = "";
+            txtBirthDay.Text = DateTime.Now.ToString();
             txtSDT.Text = "";
-            txtKhoa.Text = "";
-            txtEmail.Text = "";
         }
         
         private void reset()
@@ -35,26 +31,18 @@ namespace LibraryManagement
             btnAdd.Enabled = true;
             btnEdit.Enabled = false;
             btnDelete.Enabled = false;
-            txtId.Enabled = false;
-            txtName.Enabled = false;
-            txtDate.Enabled = false;
-            selGT.Enabled = false;
-            txtAddress.Enabled = false;
+            txtMaDocGia.Enabled = false;
+            txtTenDocGia.Enabled = false;
+            txtBirthDay.Enabled = false;
             txtSDT.Enabled = false;
-            txtKhoa.Enabled = false;
-            txtEmail.Enabled = false;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            txtId.Enabled = true;
-            txtName.Enabled = true;
-            txtDate.Enabled= true;
-            selGT.Enabled = true;
-            txtAddress.Enabled = true;
+            txtMaDocGia.Enabled = true;
+            txtTenDocGia.Enabled = true;
+            txtBirthDay.Enabled= true;
             txtSDT.Enabled = true;
-            txtKhoa.Enabled = true;
-            txtEmail.Enabled = true;
             btnCancle.Enabled = true;
             btnSave.Enabled = true;
             btnAdd.Enabled = false;
@@ -63,17 +51,17 @@ namespace LibraryManagement
         private void btnCancle_Click(object sender, EventArgs e)
         {
             init();
-            reset();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (txtId.Text == "" || txtName.Text == "" || selGT.Text == ""
-                 || txtSDT.Text == "" || txtEmail.Text == ""
-                || txtKhoa.Text == "" || txtAddress.Text == "")
+            if (txtMaDocGia.Text == "" || txtTenDocGia.Text == "" || txtSDT.Text == "")
+            {
                 MessageBox.Show("Vui lòng nhập đủ thông tin", "Không Thể Lưu",
                     buttons: MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
+                return;
+            }
             else
             {
                 MessageBox.Show("Thông tin đã Lưu", "Lưu Thành Công",
@@ -82,11 +70,15 @@ namespace LibraryManagement
 
             }
             init();
+            reset();
         }
 
-        private void Form_DocGia_Load(object sender, EventArgs e)
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

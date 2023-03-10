@@ -34,6 +34,7 @@
             this.menuDanhMuc = new System.Windows.Forms.ToolStripMenuItem();
             this.menuQLSach = new System.Windows.Forms.ToolStripMenuItem();
             this.menuQLDG = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuQLOthers = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMuon_Tra = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStat = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,7 +76,8 @@
             // 
             this.menuDanhMuc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuQLSach,
-            this.menuQLDG});
+            this.menuQLDG,
+            this.menuQLOthers});
             this.menuDanhMuc.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuDanhMuc.Name = "menuDanhMuc";
             this.menuDanhMuc.Size = new System.Drawing.Size(268, 54);
@@ -86,6 +88,7 @@
             this.menuQLSach.Name = "menuQLSach";
             this.menuQLSach.Size = new System.Drawing.Size(314, 42);
             this.menuQLSach.Text = "Quản Lý Sách";
+            this.menuQLSach.Click += new System.EventHandler(this.menuQLSach_Click);
             // 
             // menuQLDG
             // 
@@ -93,6 +96,13 @@
             this.menuQLDG.Size = new System.Drawing.Size(314, 42);
             this.menuQLDG.Text = "Quản Lý Độc Giả";
             this.menuQLDG.Click += new System.EventHandler(this.menuQLDG_Click);
+            // 
+            // menuQLOthers
+            // 
+            this.menuQLOthers.Name = "menuQLOthers";
+            this.menuQLOthers.Size = new System.Drawing.Size(314, 42);
+            this.menuQLOthers.Text = "Quản Lý Khác";
+            this.menuQLOthers.Click += new System.EventHandler(this.menuQLOthers_Click);
             // 
             // menuMuon_Tra
             // 
@@ -122,6 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -129,12 +140,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuQuanLy);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Phần Mềm Quản Lý Thư Viện";
+            this.Text = "Library Management";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuQuanLy.ResumeLayout(false);
             this.menuQuanLy.PerformLayout();
@@ -152,6 +164,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuExit;
         private System.Windows.Forms.ToolStripMenuItem menuQLSach;
         private System.Windows.Forms.ToolStripMenuItem menuQLDG;
+        private System.Windows.Forms.ToolStripMenuItem menuQLOthers;
     }
 }
 

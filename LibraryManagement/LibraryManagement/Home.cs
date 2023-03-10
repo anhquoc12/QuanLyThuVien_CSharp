@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BTL_LTCSDL_QLThưViện;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,6 +40,18 @@ namespace LibraryManagement
         private void menuStat_Click(object sender, EventArgs e)
         {
             Form_Stat f = new Form_Stat();
+            f.Show();
+        }
+
+        private void menuQLSach_Click(object sender, EventArgs e)
+        {
+            Form_QuanLySach f = new Form_QuanLySach();
+            f.Show();
+        }
+
+        private void menuQLOthers_Click(object sender, EventArgs e)
+        {
+            Form_QuanLyKhac f = new Form_QuanLyKhac();
             f.Show();
         }
     }
