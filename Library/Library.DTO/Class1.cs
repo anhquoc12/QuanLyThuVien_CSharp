@@ -1,6 +1,6 @@
 ﻿namespace Library.DTO
 {
-    public class dto
+    public class Class1
     {
 
     }

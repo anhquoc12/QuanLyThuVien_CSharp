@@ -1,6 +1,6 @@
 ﻿namespace Library.BUS
 {
-    public class bus
+    public class Class1
     {
 
     }

@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="QLTV.DTO">
-      <HintPath>..\Library.DTO\bin\Debug\net6.0\QLTV.DTO.dll</HintPath>
+    <Reference Include="Library.DAO">
+      <HintPath>..\Library.DAO\bin\Debug\net6.0\Library.DAO.dll</HintPath>
+    </Reference>
+    <Reference Include="Library.DTO">
+      <HintPath>..\Library.DTO\bin\Debug\net6.0\Library.DTO.dll</HintPath>
     </Reference>
   </ItemGroup>
 

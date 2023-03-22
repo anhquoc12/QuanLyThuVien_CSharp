@@ -1,6 +1,6 @@
 ﻿namespace Library.DAO
 {
-    public class dao
+    public class Class1
     {
 
     }

@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Library.DTO">
+      <HintPath>..\Library.DTO\bin\Debug\net6.0\Library.DTO.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

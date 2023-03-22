@@ -51,7 +51,16 @@ namespace BTL_LTCSDL_QLThưViện
             txtNamXuatBan.Enabled = false;
             txtSoLuong.Enabled = false;
             txtGia.Enabled = false;
-             
+
+            txtMaSach.Text = "";
+            txtTenSach.Text = "";
+            comTacGia.Text = "";
+            comNhaCungCap.Text = "";
+            txtLoaiSach.Text = "";
+            txtNamXuatBan.Text = "";
+            txtSoLuong.Text = "";
+            txtGia.Text = "";
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
