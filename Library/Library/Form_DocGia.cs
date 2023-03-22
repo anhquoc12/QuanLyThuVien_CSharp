@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -79,6 +80,13 @@ namespace LibraryManagement
             {
                 e.Handled = true;
             }
+        }
+
+        private void Form_DocGia_Load(object sender, EventArgs e)
+        {
+            //DataTable dt = new DocGiaBUS().LoadDocGia();
+            //dataDocGia.DataSource = dt;
+            dataDocGia.DataSource = new DocGiaBUS().LoadDocGia();
         }
     }
 }

@@ -27,8 +27,11 @@ namespace LibraryManagement
 
         private void menuQLDG_Click(object sender, EventArgs e)
         {
-            Form_DocGia f = new Form_DocGia();
-            f.Show();
+            try
+            {
+                Form_DocGia f = new Form_DocGia();
+                f.Show();
+            } catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void menuMuon_Tra_Click(object sender, EventArgs e)

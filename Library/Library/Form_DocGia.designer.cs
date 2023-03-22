@@ -389,6 +389,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản Lý Độc Giả";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form_DocGia_Load);
             this.gbSearch.ResumeLayout(false);
             this.gbSearch.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);

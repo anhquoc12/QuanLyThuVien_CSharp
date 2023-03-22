@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Library.BUS;
+using Library.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -126,6 +128,21 @@ namespace BTL_LTCSDL_QLThưViện
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void Form_QuanLySach_Load(object sender, EventArgs e)
+        {
+            //DataTable dt = new SachBUS().LoadSach();
+            //dataSach.DataSource = dt;
+            dataSach.DataSource = new SachBUS().LoadSach();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (rdMaSach.Checked) 
+            {
+            
             }
         }
     }

@@ -158,6 +158,7 @@
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Tìm Kiếm ";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // groupBox4
             // 
@@ -548,6 +549,7 @@
             this.ShowIcon = false;
             this.Text = "Quản Lý Sách";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form_QuanLySach_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
